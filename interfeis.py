@@ -13,7 +13,7 @@ message_entry.place(relx=.5, rely=.1, anchor="c")
 def recycle():
     result = message.get()
     mass = result.split()
-    output = mass[2], mass[0][0]+"."+mass[1][0]+"."
+    output = mass[0], mass[1][0]+"."+mass[2][0]+"."
     messagebox.showinfo("GUI Python", output)
  
 message_button = Button(text="Click Me", command=recycle)
